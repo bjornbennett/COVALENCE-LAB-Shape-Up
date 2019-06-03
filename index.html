@@ -5,13 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LAB - Shape Up</title>
+    <link rel="stylesheet" href="foundation.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div class="triangle"></div>
-    <div class="circle"></div>
-    <div class="square"></div>
+    <!-- <div class="tri"></div>
+    <div class="circ"></div>
+    <div class="squa"></div>
+    <div class="rect"></div> -->
+    <h1 class="text-center">Shape Generator!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="columns small-12 large-6">
+                <div class="input-group square-group">
+                    <span class="input-group-label">Add Square</span>
+                    <input class="input-group-field" type="number" placeholder="height in pixels">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+            <div class="columns small-12 large-6">
+                <div class="input-group rectangle-group">
+                    <span class="input-group-label">Add Rectangle</span>
+                    <input class="input-group-field" type="number" placeholder="width in px">
+                    <input class="input-group-field" type="number" placeholder="height in px">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+            <div class="columns small-12 large-6">
+                <div class="input-group circle-group">
+                    <span class="input-group-label">Add Circle</span>
+                    <input class="input-group-field" type="number" placeholder="radius in pixels">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+            <div class="columns small-12 large-6">
+                <div class="input-group triangle-group">
+                    <span class="input-group-label">Add Triangle</span>
+                    <input class="input-group-field" type="number" placeholder="height in pixels">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row target-container">
+        <div class="container">
+            <div id="shape-target"></div>
+            <div class="display-details">
+                <h2>Shape Details</h2>
+                <p id="Shape-Name">Shape Name:<span></span></p>
+                <p id="Width">Width:<span></span></p>
+                <p id="Height">Height:<span></span></p>
+                <p id="Radius">Radius:<span></span></p>
+                <p id="Area">Area:<span></span></p>
+                <p id="Perimeter">Perimeter:<span></span></p>
+            </div>
+            <br class="cb">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
