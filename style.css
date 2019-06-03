@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 * {
     box-sizing: border-box;
+    font-family: 'Roboto',helvetica, arial, sans-serif !important;
 }
 body {
+    font-family: 'Roboto',helvetica, arial, sans-serif;
     font-size: 14px;
     margin: 0 auto;
     max-width: 900px;
 }
 h2 {
     font-size: 2em;
+    font-weight: bold;
+    color: #455982;
+}
+p {
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 30px;
 }
 #shape-target {
     width: 600px;
@@ -37,10 +47,15 @@ h2 {
     float: right;
     width: 280px;
     margin-top: 50px;
+    color: #455982;
 }
 .display-details span {
     display: inline-block;
     margin-left: 10px;
+    color: #000;
+}
+.display-details p {
+    text-align: left;
 }
 .cb:after {
     content: "";
@@ -100,4 +115,31 @@ input {
 }
 .input-group-field{
     height: 2em;
+}
+.input-group-label {
+    font-weight: bold;  
+    font-style: italic;
+}
+.button {
+    font-size: 0.85em;
+    color: #fff;
+    padding: 0.9em 1.8em;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    display: block;
+    margin: 1em auto;
+    position: relative;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    cursor: pointer;
+    background: #8b95ab;
+    font-style: italic;
 }
